@@ -6,7 +6,7 @@ export default function Home() {
       <p>Evan Amezcua ☺ software engineer</p>
       <a href='tel:07013940013'>☏ 070 1394 0013</a>
       <a href='mailto:hello@evan.am'>✉ hello@evan.am</a>
-      <p>🜨 Toyko, Japan</p>
+      <p>🜨 Tokyo, Japan</p>
     </div>
   );
 }
