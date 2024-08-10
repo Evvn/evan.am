@@ -1,9 +1,29 @@
 body {
+  /* color: #d0d0d0; */
+  /* background: #131313; */
   color: white;
   background: black;
+  margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
 }
