@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: calc(100vh - 2rem);
+  height: calc(100dvh - 2rem);
   margin: 1rem;
   gap: 1rem;
 
@@ -17,6 +17,10 @@
   justify-content: space-between;
 
   font-size: 1.3rem;
+}
+
+.projectList {
+  max-height: 50vh;
 }
 
 .videoContainer {
@@ -41,19 +45,20 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: flex-start;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     gap: 0;
   }
 
   .homeNav {
     justify-content: space-between;
-    height: 50vh;
+    max-height: 50dvh;
     margin: 1rem;
   }
 
   .projectList {
     overflow: auto;
+    max-height: auto;
     margin: 1rem 0;
   }
 
