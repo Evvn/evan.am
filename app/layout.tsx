@@ -1,7 +1,16 @@
 import './globals.css';
-// import { VT323 } from 'next/font/google';
+import localFont from 'next/font/local';
 
-// const vt323 = VT323({ weight: '400', subsets: ['latin'] });
+const mondwest = localFont({
+  src: [
+    {
+      path: './fonts/PPMondwest-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-mondwest',
+});
 
 export const metadata = {
   title: 'evan.am',
@@ -15,8 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      {/* <body className={vt323.className}>{children}</body> */}
-      <body>{children}</body>
+      <body className={mondwest.className}>{children}</body>
     </html>
   );
 }

@@ -1,6 +1,40 @@
 'use client';
 import styles from './page.module.css';
 import { useState } from 'react';
+import localFont from 'next/font/local';
+
+const mondwest = localFont({
+  src: [
+    {
+      path: './fonts/PPMondwest-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-mondwest',
+});
+
+export const neueMontrealMedium = localFont({
+  src: [
+    {
+      path: './fonts/PPNeueMontreal-Medium.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-neue-montreal-medium',
+});
+
+export const neueMontrealItalic = localFont({
+  src: [
+    {
+      path: './fonts/PPNeueMontreal-Italic.otf',
+      weight: 'bold',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-neue-montreal-italic',
+});
 
 const projects = [
   {
@@ -39,10 +73,11 @@ export default function Home() {
       <nav className={styles.homeNav}>
         <div>
           <h1>
-            <span className='italic'>evan</span>.am ✨
+            <span className={neueMontrealItalic.className}>evan</span>
+            .am ✨
           </h1>
           <p>
-            <span className='normal'>editor</span> __tokyo
+            <span className={neueMontrealMedium.className}>editor</span> __tokyo
           </p>
         </div>
 
@@ -53,14 +88,18 @@ export default function Home() {
               onClick={() => {
                 setCurrentProject(i);
               }}
-              className={i === currentProject ? 'italic' : 'bold'}
+              className={
+                i === currentProject
+                  ? neueMontrealItalic.className
+                  : neueMontrealMedium.className
+              }
               style={{
                 cursor: 'pointer',
                 textDecoration: i === currentProject ? 'underline' : 'none',
                 marginBottom: '.5rem',
               }}
             >
-              <span className={styles.projectNumber}>{i + 1}. </span>
+              <span className={mondwest.className}>{i + 1}. </span>
               <span className={styles.projectTitle}>{project.title}</span>
             </p>
           ))}
@@ -75,7 +114,8 @@ export default function Home() {
           </p> */}
           <p>
             <a href='mailto:hello@evan.am'>
-              <span className='normal'>hello</span>@evan.am
+              <span className={neueMontrealMedium.className}>hello</span>
+              @evan.am
             </a>{' '}
             __<a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
           </p>
