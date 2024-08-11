@@ -42,7 +42,7 @@ export default function Home() {
             <span className='italic'>evan</span>.am ✨
           </h1>
           <p>
-            <span className='normal'>editor __ </span>tokyo
+            <span className='normal'>editor</span> __tokyo
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Home() {
             <a href='mailto:hello@evan.am'>
               <span className='normal'>hello</span>@evan.am
             </a>{' '}
-            __ <a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
+            __<a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
           </p>
           {/* <p>🜨 Tokyo, Japan</p> */}
         </div>
