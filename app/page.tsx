@@ -80,7 +80,6 @@ export default function Home() {
       <div className={styles.videoContainer}>
         <iframe
           allow='fullscreen;autoplay'
-          height='100%'
           src={projects[currentProject].src}
           width='100%'
           className={styles.iframe}
