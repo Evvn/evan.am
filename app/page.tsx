@@ -38,8 +38,12 @@ export default function Home() {
       {/* -------- NAV --------  */}
       <nav className={styles.homeNav}>
         <div>
-          <h1>EVAN.AM</h1>
-          <p>editor | tokyo</p>
+          <h1>
+            <span className='italic'>evan</span>.am ✨
+          </h1>
+          <p>
+            <span className='normal'>editor __</span>tokyo
+          </p>
         </div>
 
         <div className={styles.projectList}>
@@ -49,13 +53,15 @@ export default function Home() {
               onClick={() => {
                 setCurrentProject(i);
               }}
+              className={i === currentProject ? 'italic' : 'bold'}
               style={{
                 cursor: 'pointer',
                 textDecoration: i === currentProject ? 'underline' : 'none',
                 marginBottom: '.5rem',
               }}
             >
-              {i + 1}. {project.title}
+              <span className={styles.projectNumber}>{i + 1}. </span>
+              <span className={styles.projectTitle}>{project.title}</span>
             </p>
           ))}
         </div>
@@ -68,8 +74,10 @@ export default function Home() {
             <a href='mailto:hello@evan.am'>✉ hello@evan.am</a>
           </p> */}
           <p>
-            <a href='mailto:hello@evan.am'>hello@evan.am</a> |{' '}
-            <a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
+            <a href='mailto:hello@evan.am'>
+              <span className='normal'>hello</span>@evan.am
+            </a>{' '}
+            __ <a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
           </p>
           {/* <p>🜨 Tokyo, Japan</p> */}
         </div>
