@@ -42,7 +42,7 @@ export default function Home() {
             <span className='italic'>evan</span>.am ✨
           </h1>
           <p>
-            <span className='normal'>editor __</span>tokyo
+            <span className='normal'>editor __ </span>tokyo
           </p>
         </div>
 

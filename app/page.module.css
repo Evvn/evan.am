@@ -23,6 +23,10 @@
   max-height: 50vh;
 }
 
+.projectNumber {
+  font-family: 'PP Mondwest', serif;
+}
+
 .videoContainer {
   position: relative;
   width: 100%;
