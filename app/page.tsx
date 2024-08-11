@@ -25,6 +25,17 @@ const neueMontrealMedium = localFont({
   variable: '--font-neue-montreal-medium',
 });
 
+const neueMontrealBold = localFont({
+  src: [
+    {
+      path: './fonts/PPNeueMontreal-Bold.otf',
+      weight: 'bold',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-neue-montreal-bold',
+});
+
 const neueMontrealItalic = localFont({
   src: [
     {
@@ -99,7 +110,14 @@ export default function Home() {
                 marginBottom: '.5rem',
               }}
             >
-              <span className={mondwest.className}>{i + 1}. </span>
+              <span
+                className={mondwest.className}
+                style={{
+                  fontWeight: i === currentProject ? 'bold' : 'inherit',
+                }}
+              >
+                {i + 1}.{' '}
+              </span>
               <span className={styles.projectTitle}>{project.title}</span>
             </p>
           ))}

@@ -21,6 +21,7 @@
 
 .projectList {
   max-height: 50vh;
+  white-space: nowrap;
 }
 
 .videoContainer {
