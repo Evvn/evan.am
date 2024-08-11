@@ -14,7 +14,7 @@ const mondwest = localFont({
   variable: '--font-mondwest',
 });
 
-export const neueMontrealMedium = localFont({
+const neueMontrealMedium = localFont({
   src: [
     {
       path: './fonts/PPNeueMontreal-Medium.otf',
@@ -25,7 +25,7 @@ export const neueMontrealMedium = localFont({
   variable: '--font-neue-montreal-medium',
 });
 
-export const neueMontrealItalic = localFont({
+const neueMontrealItalic = localFont({
   src: [
     {
       path: './fonts/PPNeueMontreal-Italic.otf',
