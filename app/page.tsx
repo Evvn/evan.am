@@ -135,7 +135,7 @@ export default function Home() {
               <span className={neueMontrealMedium.className}>hello</span>
               @evan.am
             </a>{' '}
-            __<a href='https://instagram.com/evanamezcua'>@evanamezcua</a>
+            __<a href='https://instagram.com/evan.am_'>@evan.am_</a>
           </p>
           {/* <p>🜨 Tokyo, Japan</p> */}
         </div>
