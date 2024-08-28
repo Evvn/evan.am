@@ -49,6 +49,11 @@ const neueMontrealItalic = localFont({
 
 const projects = [
   {
+    title: 'Coming-of-Age Story – Brandy Senki',
+    description: '',
+    src: 'https://streamable.com/e/z9hevf?autoplay=1&muted=1',
+  },
+  {
     title: 'YUMMY – NENE ft. YOUNG COCO',
     description: '',
     src: 'https://streamable.com/e/v3862l?autoplay=1&muted=1',
