@@ -64,6 +64,16 @@ const projects = [
     src: 'https://streamable.com/e/bqtzry?autoplay=1&muted=1',
   },
   {
+    title: 'Sony – Nuro Mobile Brand Commercial',
+    description: '',
+    src: 'https://streamable.com/e/mnsvay?autoplay=1&muted=1',
+  },
+  {
+    title: 'Sony – Nuro Mobile Plan Commercial',
+    description: '',
+    src: 'https://streamable.com/e/nv8z9a?autoplay=1&muted=1',
+  },
+  {
     title: 'The Nunchuck Princess',
     description: '',
     src: 'https://streamable.com/e/rzo9y0?autoplay=1&muted=1',
