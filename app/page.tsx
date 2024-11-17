@@ -48,10 +48,25 @@ const neueMontrealItalic = localFont({
 });
 
 const projects = [
+  // {
+  //   title: 'Brandy Senki – 27:00 ',
+  //   description: '',
+  //   src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=1',
+  // },
+  // {
+  //   title: 'HÄN - BRIDGES',
+  //   description: '',
+  //   src: 'https://streamable.com/e/zmknxx?autoplay=1&muted=1',
+  // },
   {
     title: 'Coming-of-Age Story – Brandy Senki',
     description: '',
     src: 'https://streamable.com/e/z9hevf?autoplay=1&muted=1',
+  },
+  {
+    title: 'HÄN – CHROME',
+    description: '',
+    src: 'https://streamable.com/e/rwkm35?autoplay=1&muted=1',
   },
   {
     title: 'YUMMY – NENE ft. YOUNG COCO',
@@ -72,6 +87,11 @@ const projects = [
     title: 'Sony – Nuro Mobile Plan Commercial',
     description: '',
     src: 'https://streamable.com/e/nv8z9a?autoplay=1&muted=1',
+  },
+  {
+    title: 'SoftBank – StationAI Teaser',
+    description: '',
+    src: 'https://streamable.com/e/5aoeup?autoplay=1&muted=1',
   },
   {
     title: 'The Nunchuck Princess',
