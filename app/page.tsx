@@ -48,11 +48,11 @@ const neueMontrealItalic = localFont({
 });
 
 const projects = [
-  // {
-  //   title: 'Brandy Senki – 27:00 ',
-  //   description: '',
-  //   src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=1',
-  // },
+  {
+    title: '27:00 – Brandy Senki',
+    description: '',
+    src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=1',
+  },
   // {
   //   title: 'HÄN - BRIDGES',
   //   description: '',
