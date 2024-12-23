@@ -48,16 +48,21 @@ const neueMontrealItalic = localFont({
 });
 
 const projects = [
+  // {
+  //   title: 'Nike – SNDR',
+  //   description: '',
+  //   src: 'https://streamable.com/jb1h0x?autoplay=1&muted=1',
+  // },
   {
     title: '27:00 – Brandy Senki',
     description: '',
     src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=1',
   },
-  // {
-  //   title: 'HÄN - BRIDGES',
-  //   description: '',
-  //   src: 'https://streamable.com/e/zmknxx?autoplay=1&muted=1',
-  // },
+  {
+    title: 'HÄN – BRIDGES',
+    description: '',
+    src: 'https://streamable.com/e/zmknxx?autoplay=1&muted=1',
+  },
   {
     title: 'Coming-of-Age Story – Brandy Senki',
     description: '',
