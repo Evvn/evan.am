@@ -48,10 +48,15 @@ const neueMontrealItalic = localFont({
 });
 
 const projects = [
+  // {
+  //   title: 'adidas China – future prophecy',
+  //   description: '',
+  //   src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=1',
+  // },
   {
     title: 'Nike – SNDR',
     description: '',
-    src: 'https://streamable.com/jb1h0x?autoplay=1&muted=1',
+    src: 'https://streamable.com/e/jb1h0x?autoplay=1&muted=1',
   },
   {
     title: '27:00 – Brandy Senki',
