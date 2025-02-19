@@ -48,6 +48,11 @@ const neueMontrealItalic = localFont({
 });
 
 const projects = [
+  {
+    title: 'Last Live – Brandy Senki',
+    description: '',
+    src: 'https://streamable.com/e/1wzn9k?autoplay=1&muted=1',
+  },
   // {
   //   title: 'adidas China – future prophecy',
   //   description: '',
