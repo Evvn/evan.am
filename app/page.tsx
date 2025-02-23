@@ -53,11 +53,11 @@ const projects = [
     description: '',
     src: 'https://streamable.com/e/1wzn9k?autoplay=1&muted=1',
   },
-  // {
-  //   title: 'adidas China – future prophecy',
-  //   description: '',
-  //   src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=1',
-  // },
+  {
+    title: 'adidas China – future prophecy',
+    description: '',
+    src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=1',
+  },
   {
     title: 'Nike – SNDR',
     description: '',
