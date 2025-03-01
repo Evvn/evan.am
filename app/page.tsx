@@ -59,6 +59,16 @@ const projects = [
     src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=1',
   },
   {
+    title: 'ASICS x size – GEL-SEKIRAN',
+    description: '',
+    src: 'https://streamable.com/e/9nxb1k?autoplay=1&muted=1',
+  },
+  // {
+  //   title: 'Liza – Paradise',
+  //   description: '',
+  //   src: 'https://streamable.com/e/ein5u7?autoplay=1&muted=1',
+  // },
+  {
     title: 'Nike – SNDR',
     description: '',
     src: 'https://streamable.com/e/jb1h0x?autoplay=1&muted=1',
