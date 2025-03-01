@@ -1,6 +1,6 @@
 'use client';
 import styles from './page.module.css';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import localFont from 'next/font/local';
 
 const mondwest = localFont({
@@ -137,6 +137,32 @@ const projects = [
 
 export default function Home() {
   const [currentProject, setCurrentProject] = useState(0);
+  const projectListRef = useRef<HTMLDivElement>(null);
+  const scrollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const startScrolling = () => {
+      scrollIntervalRef.current = setInterval(() => {
+        if (projectListRef.current && !isHovered) {
+          const list = projectListRef.current;
+          if (list.scrollTop + list.offsetHeight >= list.scrollHeight) {
+            list.scrollTop = 0; // Reset to top
+          } else {
+            list.scrollTop += 13; // Scroll down by 13px
+          }
+        }
+      }, 1300);
+    };
+
+    startScrolling();
+
+    return () => {
+      if (scrollIntervalRef.current) {
+        clearInterval(scrollIntervalRef.current);
+      }
+    };
+  }, [isHovered]); // Reacts to hover state
 
   return (
     <div className={styles.homeContainer}>
@@ -148,11 +174,17 @@ export default function Home() {
             .am ✨
           </h1>
           <p>
-            <span className={neueMontrealMedium.className}>editor</span> __tokyo
+            <span className={neueMontrealMedium.className}>editor</span> __
+            tokyo
           </p>
         </div>
 
-        <div className={styles.projectList}>
+        <div
+          className={styles.projectList}
+          ref={projectListRef}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           {projects.map((project, i) => (
             <p
               key={project.title}
@@ -195,7 +227,7 @@ export default function Home() {
               <span className={neueMontrealMedium.className}>hello</span>
               @evan.am
             </a>{' '}
-            __<a href='https://instagram.com/evan.am_'>@evan.am_</a>
+            __ <a href='https://instagram.com/evan.am_'>@evan.am_</a>
           </p>
           {/* <p>🜨 Tokyo, Japan</p> */}
         </div>
