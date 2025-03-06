@@ -63,11 +63,11 @@ const projects = [
     description: '',
     src: 'https://streamable.com/e/9nxb1k?autoplay=1&muted=1',
   },
-  // {
-  //   title: 'Liza – Paradise',
-  //   description: '',
-  //   src: 'https://streamable.com/e/ein5u7?autoplay=1&muted=1',
-  // },
+  {
+    title: 'Liza – Paradise',
+    description: '',
+    src: 'https://streamable.com/e/ein5u7?autoplay=1&muted=1',
+  },
   {
     title: 'Nike – SNDR',
     description: '',
