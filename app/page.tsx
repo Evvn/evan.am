@@ -129,11 +129,11 @@ const projects = [
     description: '',
     src: 'https://streamable.com/e/ez43x5?autoplay=1&muted=0',
   },
-  {
-    title: 'eye_C magazine x peacebird',
-    description: '',
-    src: 'https://streamable.com/e/8xlrhl?autoplay=1&muted=0',
-  },
+  // {
+  //   title: 'eye_C magazine x peacebird',
+  //   description: '',
+  //   src: 'https://streamable.com/e/8xlrhl?autoplay=1&muted=0',
+  // },
 ];
 
 export default function Home() {
