@@ -175,8 +175,7 @@ export default function Home() {
             .am ✨
           </h1>
           <p>
-            <span className={neueMontrealMedium.className}>editor</span> __
-            tokyo
+            <span className={neueMontrealMedium.className}>editor, </span>tokyo
           </p>
         </div>
 
@@ -224,11 +223,21 @@ export default function Home() {
             <a href='mailto:hello@evan.am'>✉ hello@evan.am</a>
           </p> */}
           <p>
+            ig: <a href='https://instagram.com/evan.am_'>@evan.am_</a>
+          </p>
+          <p>
+            me:{' '}
             <a href='mailto:hello@evan.am'>
               <span className={neueMontrealMedium.className}>hello</span>
               @evan.am
-            </a>{' '}
-            __ <a href='https://instagram.com/evan.am_'>@evan.am_</a>
+            </a>
+          </p>
+          <p>
+            mgmt:{' '}
+            <a href='mailto:naoko@nobodcr.com'>
+              <span className={neueMontrealMedium.className}>naoko</span>
+              @nobodcr.com
+            </a>
           </p>
           {/* <p>🜨 Tokyo, Japan</p> */}
         </div>
