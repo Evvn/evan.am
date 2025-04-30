@@ -50,72 +50,82 @@ const neueMontrealItalic = localFont({
 // /e/ for embed, autoplay=1 to autoplay, muted=1 to mute (browser may auto-mute)
 const projects = [
   {
-    title: 'Last Live – Brandy Senki',
+    title: 'Clarks — Wallabee Day',
+    description: '',
+    src: 'https://streamable.com/e/he6ypy?autoplay=1&muted=0',
+  },
+  {
+    title: 'Fix — Brandy Senki',
+    description: '',
+    src: 'https://streamable.com/e/b9se5j?autoplay=1&muted=0',
+  },
+  {
+    title: 'Last Live — Brandy Senki',
     description: '',
     src: 'https://streamable.com/e/1wzn9k?autoplay=1&muted=0',
   },
   {
-    title: 'adidas China – future prophecy',
+    title: 'adidas China — future prophecy',
     description: '',
     src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=0',
   },
   {
-    title: 'ASICS x size – GEL-SEKIRAN',
+    title: 'ASICS x size — GEL-SEKIRAN',
     description: '',
     src: 'https://streamable.com/e/9nxb1k?autoplay=1&muted=0',
   },
   {
-    title: 'Liza – Paradise',
+    title: 'Liza — Paradise',
     description: '',
     src: 'https://streamable.com/e/ein5u7?autoplay=1&muted=0',
   },
   {
-    title: 'Nike – SNDR',
+    title: 'Nike — SNDR',
     description: '',
     src: 'https://streamable.com/e/jb1h0x?autoplay=1&muted=0',
   },
   {
-    title: '27:00 – Brandy Senki',
+    title: '27:00 — Brandy Senki',
     description: '',
     src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=0',
   },
   {
-    title: 'HÄN – BRIDGES',
+    title: 'HÄN — BRIDGES',
     description: '',
     src: 'https://streamable.com/e/zmknxx?autoplay=1&muted=0',
   },
   {
-    title: 'Coming-of-Age Story – Brandy Senki',
+    title: 'Coming-of-Age Story — Brandy Senki',
     description: '',
     src: 'https://streamable.com/e/z9hevf?autoplay=1&muted=0',
   },
   {
-    title: 'HÄN – CHROME',
+    title: 'HÄN — CHROME',
     description: '',
     src: 'https://streamable.com/e/rwkm35?autoplay=1&muted=0',
   },
   {
-    title: 'YUMMY – NENE ft. YOUNG COCO',
+    title: 'YUMMY — NENE ft. YOUNG COCO',
     description: '',
     src: 'https://streamable.com/e/v3862l?autoplay=1&muted=0',
   },
   {
-    title: 'Do It Like Me – Yurufuwa Gang x Glogang',
+    title: 'Do It Like Me — Yurufuwa Gang x Glogang',
     description: '',
     src: 'https://streamable.com/e/bqtzry?autoplay=1&muted=0',
   },
   {
-    title: 'Sony – Nuro Mobile Brand Commercial',
+    title: 'Sony — Nuro Mobile Brand Commercial',
     description: '',
     src: 'https://streamable.com/e/mnsvay?autoplay=1&muted=0',
   },
   {
-    title: 'Sony – Nuro Mobile Plan Commercial',
+    title: 'Sony — Nuro Mobile Plan Commercial',
     description: '',
     src: 'https://streamable.com/e/nv8z9a?autoplay=1&muted=0',
   },
   {
-    title: 'SoftBank – StationAI Teaser',
+    title: 'SoftBank — StationAI Teaser',
     description: '',
     src: 'https://streamable.com/e/5aoeup?autoplay=1&muted=0',
   },
@@ -125,7 +135,7 @@ const projects = [
     src: 'https://streamable.com/e/rzo9y0?autoplay=1&muted=0',
   },
   {
-    title: 'Phoebes Angels – adidas Forum',
+    title: 'Phoebes Angels — adidas Forum',
     description: '',
     src: 'https://streamable.com/e/ez43x5?autoplay=1&muted=0',
   },
