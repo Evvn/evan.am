@@ -1,0 +1,70 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: calc(100dvh - 2rem);
+  margin: 13px;
+  gap: 1rem;
+
+  font-size: 13px;
+}
+
+.homeNav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectList {
+  max-height: 50vh;
+  white-space: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100dvh;
+    margin: 0;
+    gap: 0;
+  }
+
+  .homeNav {
+    justify-content: space-between;
+    max-height: 50dvh;
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .projectList {
+    overflow: auto;
+    max-height: auto;
+    margin: 1rem 0;
+  }
+
+  .videoContainer {
+    margin: 1rem 0;
+  }
+}
