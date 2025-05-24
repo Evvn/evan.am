@@ -226,7 +226,7 @@ export default function Home() {
                   fontWeight: i === currentProject ? 'bold' : 'inherit',
                 }}
               >
-                {i + 1}.{' '}
+                {i + 1}{' '}
               </span>
               <span className={styles.projectTitle}>{project.title}</span>
             </p>
