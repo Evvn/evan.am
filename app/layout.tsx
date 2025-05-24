@@ -1,20 +1,25 @@
 import './globals.css';
-import localFont from 'next/font/local';
+// import localFont from 'next/font/local';
 
-const mondwest = localFont({
-  src: [
-    {
-      path: './fonts/PPMondwest-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-mondwest',
-});
+// const mondwest = localFont({
+//   src: [
+//     {
+//       path: './fonts/PPMondwest-Regular.ttf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--font-mondwest',
+// });
+
+// export const metadata = {
+//   title: 'evan.am',
+//   description: 'evan evan evan evan',
+// };
 
 export const metadata = {
   title: 'evan.am',
-  description: 'evan evan evan evan',
+  description: 'evan, offline editor in tokyo',
 };
 
 export default function RootLayout({
@@ -24,7 +29,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={mondwest.className}>{children}</body>
+      <body>{children}</body>
+      {/* <body className={mondwest.className}>{children}</body> */}
     </html>
   );
 }

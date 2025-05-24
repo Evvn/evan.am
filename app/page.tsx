@@ -1,54 +1,59 @@
 'use client';
 import styles from './page.module.css';
 import { useEffect, useRef, useState } from 'react';
-import localFont from 'next/font/local';
+// import localFont from 'next/font/local';
 
-const mondwest = localFont({
-  src: [
-    {
-      path: './fonts/PPMondwest-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-mondwest',
-});
+// const mondwest = localFont({
+//   src: [
+//     {
+//       path: './fonts/PPMondwest-Regular.ttf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--font-mondwest',
+// });
 
-const neueMontrealMedium = localFont({
-  src: [
-    {
-      path: './fonts/PPNeueMontreal-Medium.otf',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-neue-montreal-medium',
-});
+// const neueMontrealMedium = localFont({
+//   src: [
+//     {
+//       path: './fonts/PPNeueMontreal-Medium.otf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--font-neue-montreal-medium',
+// });
 
-const neueMontrealBold = localFont({
-  src: [
-    {
-      path: './fonts/PPNeueMontreal-Bold.otf',
-      weight: 'bold',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-neue-montreal-bold',
-});
+// const neueMontrealBold = localFont({
+//   src: [
+//     {
+//       path: './fonts/PPNeueMontreal-Bold.otf',
+//       weight: 'bold',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--font-neue-montreal-bold',
+// });
 
-const neueMontrealItalic = localFont({
-  src: [
-    {
-      path: './fonts/PPNeueMontreal-Italic.otf',
-      weight: 'bold',
-      style: 'italic',
-    },
-  ],
-  variable: '--font-neue-montreal-italic',
-});
+// const neueMontrealItalic = localFont({
+//   src: [
+//     {
+//       path: './fonts/PPNeueMontreal-Italic.otf',
+//       weight: 'bold',
+//       style: 'italic',
+//     },
+//   ],
+//   variable: '--font-neue-montreal-italic',
+// });
 
 // /e/ for embed, autoplay=1 to autoplay, muted=1 to mute (browser may auto-mute)
 const projects = [
+  {
+    title: 'Casio — Future Classic',
+    description: '',
+    src: 'https://streamable.com/e/5w788a?autoplay=1&muted=0',
+  },
   {
     title: 'Clarks — Wallabee Day',
     description: '',
@@ -180,13 +185,15 @@ export default function Home() {
       {/* -------- NAV --------  */}
       <nav className={styles.homeNav}>
         <div>
-          <h1>
+          <p>evan.am</p>
+          <p>editor, tokyo</p>
+          {/* <h1>
             <span className={neueMontrealItalic.className}>evan</span>
             .am ✨
           </h1>
           <p>
             <span className={neueMontrealMedium.className}>editor, </span>tokyo
-          </p>
+          </p> */}
         </div>
 
         <div
@@ -201,19 +208,20 @@ export default function Home() {
               onClick={() => {
                 setCurrentProject(i);
               }}
-              className={
-                i === currentProject
-                  ? neueMontrealItalic.className
-                  : neueMontrealMedium.className
-              }
+              // className={
+              //   i === currentProject
+              //     ? neueMontrealItalic.className
+              //     : neueMontrealMedium.className
+              // }
               style={{
                 cursor: 'pointer',
                 textDecoration: i === currentProject ? 'underline' : 'none',
-                marginBottom: '.5rem',
+                fontWeight: i === currentProject ? 'bold' : 'normal',
+                // marginBottom: '.5rem',
               }}
             >
               <span
-                className={mondwest.className}
+                // className={mondwest.className}
                 style={{
                   fontWeight: i === currentProject ? 'bold' : 'inherit',
                 }}
@@ -236,16 +244,17 @@ export default function Home() {
             ig: <a href='https://instagram.com/evan.am_'>@evan.am_</a>
           </p>
           <p>
-            me:{' '}
-            <a href='mailto:hello@evan.am'>
+            me: <a href='mailto:hello@evan.am'>hello@evan.am</a>
+            {/* <a href='mailto:hello@evan.am'>
               <span className={neueMontrealMedium.className}>hello</span>
               @evan.am
-            </a>
+            </a> */}
           </p>
           <p>
             mgmt:{' '}
             <a href='mailto:naoko@nobodcr.com'>
-              <span className={neueMontrealMedium.className}>naoko</span>
+              <span>naoko</span>
+              {/* <span className={neueMontrealMedium.className}>naoko</span> */}
               @nobodcr.com
             </a>
           </p>
