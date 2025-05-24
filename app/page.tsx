@@ -220,14 +220,14 @@ export default function Home() {
                 // marginBottom: '.5rem',
               }}
             >
-              <span
+              {/* <span
                 // className={mondwest.className}
                 style={{
                   fontWeight: i === currentProject ? 'bold' : 'inherit',
                 }}
               >
                 {i + 1}{' '}
-              </span>
+              </span> */}
               <span className={styles.projectTitle}>{project.title}</span>
             </p>
           ))}
