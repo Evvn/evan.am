@@ -1,9 +1,15 @@
 // /e/ for embed, autoplay=1 to autoplay, muted=1 to mute (browser may auto-mute)
+// default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
     title: 'Casio – Future Classic',
     path: 'casio-future-classic',
     src: 'https://streamable.com/e/5w788a?autoplay=1&muted=0',
+  },
+  {
+    title: 'Casio – Future Classic Interviews',
+    path: 'casio-future-classic-interviews',
+    src: 'https://streamable.com/e/y8x5kv?autoplay=1&muted=0',
   },
   {
     title: 'Clarks – Wallabee Day',
@@ -39,6 +45,16 @@ export const projects = [
     title: 'Nike – SNDR',
     path: 'nike-sndr',
     src: 'https://streamable.com/e/jb1h0x?autoplay=1&muted=0',
+  },
+  {
+    title: 'Shu Uemura – Kinu Care Glow Up',
+    path: 'kinu-care-glow-up',
+    src: 'https://streamable.com/e/m8j9bl?autoplay=1&muted=0',
+  },
+  {
+    title: 'Shu Uemura – Kinu Care Lip Hack',
+    path: 'kinu-care-lip-hack',
+    src: 'https://streamable.com/e/2aqq3i?autoplay=1&muted=0',
   },
   {
     title: 'Brandy Senki – 27:00',
