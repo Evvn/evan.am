@@ -11,14 +11,9 @@ export const projects = [
     src: 'https://streamable.com/e/he6ypy?autoplay=1&muted=0',
   },
   {
-    title: 'Fix – Brandy Senki',
+    title: 'Brandy Senki – Fix',
     path: 'fix-brandy-senki',
     src: 'https://streamable.com/e/b9se5j?autoplay=1&muted=0',
-  },
-  {
-    title: 'Last Live – Brandy Senki',
-    path: 'last-live-brandy-senki',
-    src: 'https://streamable.com/e/1wzn9k?autoplay=1&muted=0',
   },
   {
     title: 'adidas China – future prophecy',
@@ -26,12 +21,17 @@ export const projects = [
     src: 'https://streamable.com/e/0c3uja?autoplay=1&muted=0',
   },
   {
+    title: 'Brandy Senki – Last Live',
+    path: 'last-live-brandy-senki',
+    src: 'https://streamable.com/e/1wzn9k?autoplay=1&muted=0',
+  },
+  {
     title: 'ASICS x size – GEL-SEKIRAN',
     path: 'asics-x-size-gel-sekiran',
     src: 'https://streamable.com/e/9nxb1k?autoplay=1&muted=0',
   },
   {
-    title: 'Liza – Paradise',
+    title: 'Liza ft. Sheida – Paradise',
     path: 'liza-paradise',
     src: 'https://streamable.com/e/ein5u7?autoplay=1&muted=0',
   },
@@ -41,7 +41,7 @@ export const projects = [
     src: 'https://streamable.com/e/jb1h0x?autoplay=1&muted=0',
   },
   {
-    title: '27:00 – Brandy Senki',
+    title: 'Brandy Senki – 27:00',
     path: '2700-brandy-senki',
     src: 'https://streamable.com/e/cuwkxv?autoplay=1&muted=0',
   },
@@ -51,7 +51,7 @@ export const projects = [
     src: 'https://streamable.com/e/zmknxx?autoplay=1&muted=0',
   },
   {
-    title: 'Coming-of-Age Story – Brandy Senki',
+    title: 'Brandy Senki – Coming-of-Age Story',
     path: 'coming-of-age-story-brandy-senki',
     src: 'https://streamable.com/e/z9hevf?autoplay=1&muted=0',
   },
@@ -61,12 +61,12 @@ export const projects = [
     src: 'https://streamable.com/e/rwkm35?autoplay=1&muted=0',
   },
   {
-    title: 'YUMMY – NENE ft. YOUNG COCO',
+    title: 'NENE ft. Young Coco – Yummy',
     path: 'yummy-nene-ft-young-coco',
     src: 'https://streamable.com/e/v3862l?autoplay=1&muted=0',
   },
   {
-    title: 'Do It Like Me – Yurufuwa Gang x Glogang',
+    title: 'Yurufuwa Gang x Glogang – Do It Like Me',
     path: 'do-it-like-me-yurufuwa-gang-x-glogang',
     src: 'https://streamable.com/e/bqtzry?autoplay=1&muted=0',
   },
@@ -91,7 +91,7 @@ export const projects = [
     src: 'https://streamable.com/e/rzo9y0?autoplay=1&muted=0',
   },
   {
-    title: 'Phoebes Angels – adidas Forum',
+    title: 'adidas Forum – Phoebes Angels',
     path: 'phoebes-angels-adidas-forum',
     src: 'https://streamable.com/e/ez43x5?autoplay=1&muted=0',
   },

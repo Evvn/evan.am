@@ -6,9 +6,6 @@ import { projects } from '../projects';
 
 export default function ProjectLogic({ path }: { path: string }) {
   const [currentProject, setCurrentProject] = useState(0);
-  const projectListRef = useRef<HTMLDivElement>(null);
-  const scrollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
   const handleProjectSelect = (path: string) => {
@@ -21,29 +18,6 @@ export default function ProjectLogic({ path }: { path: string }) {
     if (index >= 0) setCurrentProject(index);
   }, [path]);
 
-  useEffect(() => {
-    const startScrolling = () => {
-      scrollIntervalRef.current = setInterval(() => {
-        if (projectListRef.current && !isHovered) {
-          const list = projectListRef.current;
-          if (list.scrollTop + list.offsetHeight >= list.scrollHeight) {
-            list.scrollTop = 0; // Reset to top
-          } else {
-            list.scrollTop += 13; // Scroll down by 13px
-          }
-        }
-      }, 1300);
-    };
-
-    startScrolling();
-
-    return () => {
-      if (scrollIntervalRef.current) {
-        clearInterval(scrollIntervalRef.current);
-      }
-    };
-  }, [isHovered]); // Reacts to hover state
-
   return (
     <div className={styles.homeContainer}>
       {/* -------- NAV --------  */}
@@ -53,12 +27,7 @@ export default function ProjectLogic({ path }: { path: string }) {
           <p>editor, tokyo</p>
         </div>
 
-        <div
-          className={styles.projectList}
-          ref={projectListRef}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className={styles.projectList}>
           {projects.map((project, i) => (
             <p
               key={project.title}
