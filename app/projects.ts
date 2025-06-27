@@ -2,6 +2,11 @@
 // default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
+    title: 'NVSCVR – Pensarte',
+    path: 'nvscvr-pensarte',
+    src: 'https://streamable.com/e/xueiq1?autoplay=1&muted=0',
+  },
+  {
     title: 'Casio – Future Classic',
     path: 'casio-future-classic',
     src: 'https://streamable.com/e/5w788a?autoplay=1&muted=0',
@@ -20,6 +25,11 @@ export const projects = [
     title: 'Brandy Senki – Fix',
     path: 'fix-brandy-senki',
     src: 'https://streamable.com/e/b9se5j?autoplay=1&muted=0',
+  },
+  {
+    title: 'Shu Uemura – Needle Brow Pencils',
+    path: 'needle-brow-pencils',
+    src: 'https://streamable.com/e/hqme7q?autoplay=1&muted=0',
   },
   {
     title: 'adidas China – future prophecy',
