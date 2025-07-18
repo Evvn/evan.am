@@ -2,6 +2,11 @@
 // default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
+    title: 'Louis Vuitton – Visionary Journeys',
+    path: 'louis-vuitton-visionary-journeys',
+    src: 'https://streamable.com/e/2hlbii?autoplay=1&muted=0',
+  },
+  {
     title: 'NVSCVR – Pensarte',
     path: 'nvscvr-pensarte',
     src: 'https://streamable.com/e/xueiq1?autoplay=1&muted=0',
