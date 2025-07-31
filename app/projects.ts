@@ -2,6 +2,21 @@
 // default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
+    title: '_J.L-A.L_ x Kolon Sport – Fall 2025',
+    path: 'jlal-kolon-fall-25',
+    src: 'https://streamable.com/e/sg7aan?autoplay=1&muted=0',
+  },
+  {
+    title: 'Slam Jam x Puma Mostro Gyaru',
+    path: 'slam-jam-puma-gyaru',
+    src: 'https://streamable.com/e/m7m6w3?autoplay=1&muted=0',
+  },
+  {
+    title: 'Slam Jam x Puma Mostro Gyaru Teaser',
+    path: 'slam-jam-puma-gyaru-teaser',
+    src: 'https://streamable.com/e/3kk4v7?autoplay=1&muted=0',
+  },
+  {
     title: 'Louis Vuitton – Visionary Journeys',
     path: 'louis-vuitton-visionary-journeys',
     src: 'https://streamable.com/e/2hlbii?autoplay=1&muted=0',
