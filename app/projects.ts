@@ -2,6 +2,11 @@
 // default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
+    title: 'NIGHTCRWLR – Madhouse',
+    path: 'nightcrwlr-madhouse',
+    src: 'https://streamable.com/e/vtoify?autoplay=1&muted=0',
+  },
+  {
     title: '_J.L-A.L_ x Kolon Sport – Fall 2025',
     path: 'jlal-kolon-fall-25',
     src: 'https://streamable.com/e/sg7aan?autoplay=1&muted=0',
