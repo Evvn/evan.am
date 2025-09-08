@@ -2,6 +2,11 @@
 // default /e/[id]?autoplay=1&muted=0
 export const projects = [
   {
+    title: 'On Running – On Labs Tokyo',
+    path: 'on-running-olt',
+    src: 'https://streamable.com/e/wgvnql?autoplay=1&muted=0',
+  },
+  {
     title: 'NIGHTCRWLR – Madhouse',
     path: 'nightcrwlr-madhouse',
     src: 'https://streamable.com/e/vtoify?autoplay=1&muted=0',
