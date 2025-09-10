@@ -4,7 +4,7 @@ export const projects = [
   {
     title: 'Musinsa – Musinsa Japan「らしさ。」',
     path: 'musinsa_rashisa',
-    src: 'https://streamable.com/e/ajeevqwgvnql?autoplay=1&muted=0',
+    src: 'https://streamable.com/e/ajeevq?autoplay=1&muted=0',
   },
   {
     title: 'On Running – On Labs Tokyo',
