@@ -12,6 +12,11 @@ export const projects = [
     src: 'https://streamable.com/e/wgvnql?autoplay=1&muted=0',
   },
   {
+    title: "Pei-Yu Hung – It's Nothing Personal",
+    path: 'pei-yu-hung-its-nothing-personal',
+    src: 'https://streamable.com/e/reiy84?autoplay=1&muted=0',
+  },
+  {
     title: 'NIGHTCRWLR – Madhouse',
     path: 'nightcrwlr-madhouse',
     src: 'https://streamable.com/e/vtoify?autoplay=1&muted=0',
