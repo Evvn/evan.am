@@ -1,11 +1,33 @@
 // /e/ for embed, autoplay=1 to autoplay, muted=1 to mute (browser may auto-mute)
 // default /e/[id]?autoplay=1&muted=0
+
+// {
+//   title: 'client – title',
+//   path: 'path-to-project',
+//   src: 'https://streamable.com/e/______?autoplay=1&muted=0',
+// },
+
 export const projects = [
   {
+    title: 'Club Scar – Motion',
+    path: 'club-scar-motion',
+    src: 'https://streamable.com/e/te1f8f?autoplay=1&muted=0',
+  },
+  {
     title: 'Musinsa – Musinsa Japan「らしさ。」',
-    path: 'musinsa_rashisa',
+    path: 'musinsa-rashisa',
     src: 'https://streamable.com/e/ajeevq?autoplay=1&muted=0',
   },
+  {
+    title: 'Parco – Shinsaibashi 50th Anniversary',
+    path: 'parco-shinsaibashi-50th-anniversary',
+    src: 'https://streamable.com/e/4ltt6k?autoplay=1&muted=0',
+  },
+  // {
+  //   title: 'Cartier – Santos Titanium',
+  //   path: 'cartier-santos',
+  //   src: 'https://streamable.com/e/s9vz5t?autoplay=1&muted=0',
+  // },
   {
     title: 'On Running – On Labs Tokyo',
     path: 'on-running-olt',
@@ -20,6 +42,16 @@ export const projects = [
     title: 'NIGHTCRWLR – Madhouse',
     path: 'nightcrwlr-madhouse',
     src: 'https://streamable.com/e/vtoify?autoplay=1&muted=0',
+  },
+  {
+    title: 'Sweet Revenge – Mine',
+    path: 'sweet-revenge-mine',
+    src: 'https://streamable.com/e/p9z8op?autoplay=1&muted=0',
+  },
+  {
+    title: 'Sabukaru – Everyone x adidas',
+    path: 'everyone-x-adidas',
+    src: 'https://streamable.com/e/?autoplay=1&muted=0',
   },
   {
     title: '_J.L-A.L_ x Kolon Sport – Fall 2025',
@@ -161,9 +193,4 @@ export const projects = [
     path: 'phoebes-angels-adidas-forum',
     src: 'https://streamable.com/e/ez43x5?autoplay=1&muted=0',
   },
-  // {
-  //   title: 'eye_C magazine x peacebird',
-  //   path: '',
-  //   src: 'https://streamable.com/e/8xlrhl?autoplay=1&muted=0',
-  // },
 ];
