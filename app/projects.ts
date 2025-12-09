@@ -49,6 +49,11 @@ export const projects = [
     src: 'https://streamable.com/e/p9z8op?autoplay=1&muted=0',
   },
   {
+    title: 'Without a Sound [short film]',
+    path: 'without-a-sound',
+    src: 'https://streamable.com/e/xjhm83?autoplay=1&muted=0',
+  },
+  {
     title: 'Sabukaru – Everyone x adidas',
     path: 'everyone-x-adidas',
     src: 'https://streamable.com/e/?autoplay=1&muted=0',
