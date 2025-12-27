@@ -23,11 +23,11 @@ export const projects = [
     path: 'parco-shinsaibashi-50th-anniversary',
     src: 'https://streamable.com/e/4ltt6k?autoplay=1&muted=0',
   },
-  // {
-  //   title: 'Cartier – Santos Titanium',
-  //   path: 'cartier-santos',
-  //   src: 'https://streamable.com/e/s9vz5t?autoplay=1&muted=0',
-  // },
+  {
+    title: 'Cartier – Santos Titanium',
+    path: 'cartier-santos',
+    src: 'https://streamable.com/e/s9vz5t?autoplay=1&muted=0',
+  },
   {
     title: 'On Running – On Labs Tokyo',
     path: 'on-running-olt',
@@ -56,7 +56,7 @@ export const projects = [
   {
     title: 'Sabukaru – Everyone x adidas',
     path: 'everyone-x-adidas',
-    src: 'https://streamable.com/e/?autoplay=1&muted=0',
+    src: 'https://streamable.com/e/8fwlk5?autoplay=1&muted=0',
   },
   {
     title: '_J.L-A.L_ x Kolon Sport – Fall 2025',
