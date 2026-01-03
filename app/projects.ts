@@ -19,6 +19,11 @@ export const projects = [
     src: 'https://streamable.com/e/ajeevq?autoplay=1&muted=0',
   },
   {
+    title: 'adidas – FOS / Future of Style',
+    path: 'adidas-future-of-style',
+    src: 'https://streamable.com/e/8uz5ir?autoplay=1&muted=0',
+  },
+  {
     title: 'Parco – Shinsaibashi 50th Anniversary',
     path: 'parco-shinsaibashi-50th-anniversary',
     src: 'https://streamable.com/e/4ltt6k?autoplay=1&muted=0',
