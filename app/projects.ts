@@ -64,6 +64,11 @@ export const projects = [
     src: 'https://streamable.com/e/8fwlk5?autoplay=1&muted=0',
   },
   {
+    title: '_J.L-A.L_ x Kolon Sport – Winter 2025',
+    path: 'jlal-kolon-winter-25',
+    src: 'https://streamable.com/e/kfrk13?autoplay=1&muted=0',
+  },
+  {
     title: '_J.L-A.L_ x Kolon Sport – Fall 2025',
     path: 'jlal-kolon-fall-25',
     src: 'https://streamable.com/e/sg7aan?autoplay=1&muted=0',
