@@ -24,6 +24,21 @@ export const projects = [
     src: 'https://streamable.com/e/8uz5ir?autoplay=1&muted=0',
   },
   {
+    title: 'IQOS – Passion, Daito Manabe ',
+    path: 'iqos-passion-daito-manabe',
+    src: 'https://streamable.com/e/cpk1q1?autoplay=1&muted=0',
+  },
+  {
+    title: 'IQOS – Passion, KELO',
+    path: 'iqos-passion-kelo',
+    src: 'https://streamable.com/e/odyx4v?autoplay=1&muted=0',
+  },
+  {
+    title: 'IQOS – Passion, Saki Matsumura',
+    path: 'iqos-passion-saki-matsumura',
+    src: 'https://streamable.com/e/vi0lfg?autoplay=1&muted=0',
+  },
+  {
     title: 'Parco – Shinsaibashi 50th Anniversary',
     path: 'parco-shinsaibashi-50th-anniversary',
     src: 'https://streamable.com/e/4ltt6k?autoplay=1&muted=0',
