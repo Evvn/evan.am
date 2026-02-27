@@ -9,6 +9,16 @@
 
 export const projects = [
   {
+    title: 'Lululemon – Brick Tokyo',
+    path: 'lululemon-x-brick',
+    src: 'https://streamable.com/e/bk492x?autoplay=1&muted=0',
+  },
+  {
+    title: 'Dior – Addict (Best of film)',
+    path: 'dior-addict-best-of',
+    src: 'https://streamable.com/e/ane9ye?autoplay=1&muted=0',
+  },
+  {
     title: 'Club Scar – Motion',
     path: 'club-scar-motion',
     src: 'https://streamable.com/e/te1f8f?autoplay=1&muted=0',
