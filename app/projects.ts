@@ -9,6 +9,11 @@
 
 export const projects = [
   {
+    title: 'Vogue Japan – Chanmina April Cover',
+    path: 'vogue-chanmina',
+    src: 'https://streamable.com/e/ua2nwb?autoplay=1&muted=0',
+  },
+  {
     title: 'Lululemon – Brick Tokyo',
     path: 'lululemon-x-brick',
     src: 'https://streamable.com/e/bk492x?autoplay=1&muted=0',
