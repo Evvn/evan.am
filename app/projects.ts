@@ -9,6 +9,11 @@
 
 export const projects = [
   {
+    title: 'Yonex – An Se Young',
+    path: 'yonex-an-se-young',
+    src: 'https://streamable.com/e/c1di57?autoplay=1&muted=0',
+  },
+  {
     title: 'Vogue Japan – Chanmina April Cover',
     path: 'vogue-chanmina',
     src: 'https://streamable.com/e/ua2nwb?autoplay=1&muted=0',
