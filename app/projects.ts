@@ -9,6 +9,11 @@
 
 export const projects = [
   {
+    title: 'Lululemon – Choi Seung-Yeon',
+    path: 'lululemon-choi',
+    src: 'https://streamable.com/e/1xuzsl?autoplay=1&muted=0',
+  },
+  {
     title: 'Yonex – An Se Young',
     path: 'yonex-an-se-young',
     src: 'https://streamable.com/e/c1di57?autoplay=1&muted=0',
