@@ -19,13 +19,12 @@ export const projects = [
     src: 'https://streamable.com/e/7og0ux?autoplay=1&muted=0',
   },
   {
-    title:
-      'Suntory – Hibiki Whisky Presents: The Craft of Kimono with Anna Sawai',
+    title: 'Suntory – The Craft of Kimono with Anna Sawai',
     path: 'suntory-hibiki-kimono',
     src: 'https://streamable.com/e/c7s2tq?autoplay=1&muted=0',
   },
   {
-    title: 'Suntory – Hibiki Whisky Presents: The Art of Washi with Anna Sawai',
+    title: 'Suntory – The Art of Washi with Anna Sawai',
     path: 'suntory-hibiki-washi',
     src: 'https://streamable.com/e/2gqp9g?autoplay=1&muted=0',
   },
