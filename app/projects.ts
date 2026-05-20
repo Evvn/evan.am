@@ -9,6 +9,16 @@
 
 export const projects = [
   {
+    title: 'Sony – 1000X THE COLLEXION',
+    path: 'sony-1000x',
+    src: 'https://streamable.com/e/m2bcqx?autoplay=1&muted=0',
+  },
+  {
+    title: 'Brandy Senki – No More',
+    path: 'no-more-brandy-senki',
+    src: 'https://streamable.com/e/7og0ux?autoplay=1&muted=0',
+  },
+  {
     title: 'Lululemon – Choi Seung-Yeon',
     path: 'lululemon-choi',
     src: 'https://streamable.com/e/1xuzsl?autoplay=1&muted=0',
