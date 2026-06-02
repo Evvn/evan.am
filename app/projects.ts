@@ -14,6 +14,11 @@ export const projects = [
     src: 'https://streamable.com/e/m2bcqx?autoplay=1&muted=0',
   },
   {
+    title: 'Red Fingers, Baby Jey, Kuroh – SE K TU',
+    path: 'se-k-tu',
+    src: 'https://streamable.com/e/s2zrrb?autoplay=1&muted=0',
+  },
+  {
     title: 'Brandy Senki – No More',
     path: 'no-more-brandy-senki',
     src: 'https://streamable.com/e/7og0ux?autoplay=1&muted=0',
