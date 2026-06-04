@@ -99,6 +99,11 @@ export const projects = [
     src: 'https://streamable.com/e/4ltt6k?autoplay=1&muted=0',
   },
   {
+    title: 'Red Bull – Tokyo Drift [editors cut]',
+    path: 'red-bull-tokyo-drift',
+    src: 'https://streamable.com/e/8kiuwk?autoplay=1&muted=0',
+  },
+  {
     title: 'Cartier – Santos Titanium',
     path: 'cartier-santos',
     src: 'https://streamable.com/e/s9vz5t?autoplay=1&muted=0',
@@ -172,6 +177,11 @@ export const projects = [
     title: 'Casio – Future Classic Interviews',
     path: 'casio-future-classic-interviews',
     src: 'https://streamable.com/e/y8x5kv?autoplay=1&muted=0',
+  },
+  {
+    title: 'Casio – Future Classic 3.0',
+    path: 'casio-future-classic-3',
+    src: 'https://streamable.com/e/c190q0?autoplay=1&muted=0',
   },
   {
     title: 'Clarks – Wallabee Day',
