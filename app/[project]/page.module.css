@@ -17,12 +17,54 @@
   justify-content: space-between;
 }
 
+.projectListContainer {
+  position: relative;
+}
+
 .projectList {
   max-height: 50vh;
   white-space: nowrap;
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.projectScrollPromptTop {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.projectScrollPromptBottom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.projectScrollPromptTop:focus-visible,
+.projectScrollPromptBottom:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
+
+.mobileScrollPrompt {
+  display: none;
 }
 
 .videoContainer {
@@ -49,22 +91,60 @@
     height: 100dvh;
     margin: 0;
     gap: 0;
+    overflow: hidden;
   }
 
   .homeNav {
     justify-content: space-between;
-    max-height: 50dvh;
+    height: calc(50dvh - 2rem);
+    max-height: calc(50dvh - 2rem);
     margin: 1rem;
-    width: 100%;
+    width: calc(100% - 2rem);
+    box-sizing: border-box;
+    min-height: 0;
+    overflow: hidden;
   }
 
-  .projectList {
-    overflow: auto;
-    max-height: auto;
+  .projectListContainer {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
     margin: 1rem 0;
   }
 
+  .projectList {
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin: 0;
+  }
+
+  .projectScrollPromptTop,
+  .projectScrollPromptBottom {
+    display: none;
+  }
+
+  .mobileScrollPrompt {
+    --scroll-prompt-offset: 1.5rem;
+
+    display: block;
+    position: absolute;
+    top: calc(
+      var(--scroll-prompt-offset) +
+        (
+          (1 - var(--scroll-progress)) *
+            (100% - (var(--scroll-prompt-offset) * 2))
+        )
+    );
+    right: 0;
+    margin: 0;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: center;
+    pointer-events: none;
+  }
+
   .videoContainer {
+    height: calc(50dvh - 2rem);
     margin: 1rem 0;
   }
 }
