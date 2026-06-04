@@ -54,6 +54,11 @@ export const projects = [
     src: 'https://streamable.com/e/bk492x?autoplay=1&muted=0',
   },
   {
+    title: 'Lululemon – Breezily',
+    path: 'lululemon-breezily',
+    src: 'https://streamable.com/e/uxb62q?autoplay=1&muted=0',
+  },
+  {
     title: 'Dior – Addict (Best of film)',
     path: 'dior-addict-best-of',
     src: 'https://streamable.com/e/ane9ye?autoplay=1&muted=0',
