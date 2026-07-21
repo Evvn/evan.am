@@ -9,6 +9,21 @@
 
 export const projects = [
   {
+    title: 'Club Scar ft. Ober & Red Fingers  – GHOST',
+    path: 'club-scar-ghost',
+    src: 'https://streamable.com/e/t2nlms?autoplay=1&muted=0',
+  },
+  {
+    title: 'Mizuno x Freddie Gibbs – Recap',
+    path: 'mizuno-freddie-gibbs-recap',
+    src: 'https://streamable.com/e/h519o6?autoplay=1&muted=0',
+  },
+  {
+    title: 'Mizuno x Freddie Gibbs – Sabukaru Documentary',
+    path: 'mizuno-freddie-gibbs-sabukaru',
+    src: 'https://streamable.com/e/pg14my?autoplay=1&muted=0',
+  },
+  {
     title: 'Sony – 1000X THE COLLEXION',
     path: 'sony-1000x',
     src: 'https://streamable.com/e/m2bcqx?autoplay=1&muted=0',
