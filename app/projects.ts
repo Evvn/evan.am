@@ -9,7 +9,12 @@
 
 export const projects = [
   {
-    title: 'Club Scar ft. Ober & Red Fingers  – GHOST',
+    title: 'Yonex – Espresso Brown',
+    path: 'yonex-espresso-brown',
+    src: 'https://streamable.com/e/7435rh?autoplay=1&muted=0',
+  },
+  {
+    title: 'Club Scar ft. Ober & Red Fingers – GHOST',
     path: 'club-scar-ghost',
     src: 'https://streamable.com/e/t2nlms?autoplay=1&muted=0',
   },
