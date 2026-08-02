@@ -29,10 +29,10 @@
   -ms-overflow-style: none;
 }
 
-.projectScrollPromptTop {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
+.projectButton,
+.projectScrollPromptTop,
+.projectScrollPromptBottom {
+  display: block;
   border: 0;
   padding: 0;
   margin: 0;
@@ -41,30 +41,30 @@
   font: inherit;
   cursor: pointer;
   text-align: left;
+}
+
+.currentProject {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.projectScrollPromptTop {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
 }
 
 .projectScrollPromptBottom {
   position: absolute;
   top: 100%;
   left: 0;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  text-align: left;
 }
 
+.projectButton:focus-visible,
 .projectScrollPromptTop:focus-visible,
 .projectScrollPromptBottom:focus-visible {
   outline: none;
   text-decoration: underline;
-}
-
-.mobileScrollPrompt {
-  display: none;
 }
 
 .videoContainer {
@@ -119,28 +119,22 @@
     margin: 0;
   }
 
-  .projectScrollPromptTop,
-  .projectScrollPromptBottom {
-    display: none;
+  .projectScrollPromptTop {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    background: black;
   }
 
-  .mobileScrollPrompt {
-    --scroll-prompt-offset: 1.5rem;
-
-    display: block;
-    position: absolute;
-    top: calc(
-      var(--scroll-prompt-offset) +
-        (
-          (1 - var(--scroll-progress)) *
-            (100% - (var(--scroll-prompt-offset) * 2))
-        )
-    );
+  .projectScrollPromptBottom {
     right: 0;
-    margin: 0;
-    transform: translateY(-50%) rotate(90deg);
-    transform-origin: center;
-    pointer-events: none;
+    bottom: 0;
+    left: auto;
+    top: auto;
+    z-index: 1;
+    background: black;
   }
 
   .videoContainer {

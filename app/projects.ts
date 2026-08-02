@@ -1,13 +1,10 @@
-// /e/ for embed, autoplay=1 to autoplay, muted=1 to mute (browser may auto-mute)
-// default /e/[id]?autoplay=1&muted=0
+export type Project = Readonly<{
+  title: string;
+  path: string;
+  src: string;
+}>;
 
-// {
-//   title: 'client – title',
-//   path: 'path-to-project',
-//   src: 'https://streamable.com/e/______?autoplay=1&muted=0',
-// },
-
-export const projects = [
+const projectCatalog = [
   {
     title: 'Yonex – Espresso Brown',
     path: 'yonex-espresso-brown',
@@ -17,6 +14,11 @@ export const projects = [
     title: 'Club Scar ft. Ober & Red Fingers – GHOST',
     path: 'club-scar-ghost',
     src: 'https://streamable.com/e/t2nlms?autoplay=1&muted=0',
+  },
+  {
+    title: 'Parco – Shinsaibashi, The Move Begins',
+    path: 'parco-the-move-begins',
+    src: 'https://streamable.com/e/gc8k8r?autoplay=1&muted=0',
   },
   {
     title: 'Mizuno x Freddie Gibbs – Recap',
@@ -99,7 +101,7 @@ export const projects = [
     src: 'https://streamable.com/e/8uz5ir?autoplay=1&muted=0',
   },
   {
-    title: 'IQOS – Passion, Daito Manabe ',
+    title: 'IQOS – Passion, Daito Manabe',
     path: 'iqos-passion-daito-manabe',
     src: 'https://streamable.com/e/cpk1q1?autoplay=1&muted=0',
   },
@@ -308,4 +310,89 @@ export const projects = [
     path: 'phoebes-angels-adidas-forum',
     src: 'https://streamable.com/e/ez43x5?autoplay=1&muted=0',
   },
-];
+] as const satisfies readonly Project[];
+
+const projectOrder = [
+  'yonex-espresso-brown',
+  'sony-1000x',
+  'club-scar-ghost',
+  'parco-the-move-begins',
+  'yonex-an-se-young',
+  'musinsa-rashisa',
+  'mizuno-freddie-gibbs-recap',
+  'mizuno-freddie-gibbs-sabukaru',
+  'no-more-brandy-senki',
+  'lululemon-choi',
+  'club-scar-motion',
+  'clarks-wallabee-day',
+  'parco-shinsaibashi-50th-anniversary',
+  'casio-future-classic',
+  'casio-future-classic-3',
+  'casio-future-classic-interviews',
+  'iqos-passion-daito-manabe',
+  'iqos-passion-kelo',
+  'iqos-passion-saki-matsumura',
+  'suntory-hibiki-kimono',
+  'suntory-hibiki-washi',
+  'needle-brow-pencils',
+  'kinu-care-glow-up',
+  'kinu-care-lip-hack',
+  'without-a-sound',
+  'lululemon-x-brick',
+  'vogue-chanmina',
+  'louis-vuitton-visionary-journeys',
+  'dior-addict-best-of',
+  'adidas-future-of-style',
+  'han-bridges',
+  'fix-brandy-senki',
+  'cartier-santos',
+  'lululemon-breezily',
+  'sweet-revenge-mine',
+  'softbank-station-ai-teaser',
+  'everyone-x-adidas',
+  'on-running-olt',
+  'liza-paradise',
+  'nvscvr-pensarte',
+  'slam-jam-puma-gyaru',
+  'slam-jam-puma-gyaru-teaser',
+  'last-live-brandy-senki',
+  'coming-of-age-story-brandy-senki',
+  '2700-brandy-senki',
+  'do-it-like-me-yurufuwa-gang-x-glogang',
+  'adidas-china-future-prophecy',
+  'se-k-tu',
+  'yummy-nene-ft-young-coco',
+  'jlal-kolon-winter-25',
+  'jlal-kolon-fall-25',
+  'red-bull-tokyo-drift',
+  'pei-yu-hung-its-nothing-personal',
+  'nike-sndr',
+  'asics-x-size-gel-sekiran',
+  'sony-nuro-mobile-brand-commercial',
+  'sony-nuro-mobile-plan-commercial',
+  'nightcrwlr-madhouse',
+  'han-chrome',
+  'phoebes-angels-adidas-forum',
+] as const;
+
+const projectsByPath = new Map(
+  projectCatalog.map((project) => [project.path, project]),
+);
+
+const orderedProjects = projectOrder.map((path) => {
+  const project = projectsByPath.get(path);
+
+  if (!project) {
+    throw new Error(`Missing project data for "${path}"`);
+  }
+
+  return project;
+});
+
+const firstProject = orderedProjects[0];
+
+if (!firstProject) {
+  throw new Error('At least one project is required');
+}
+
+export const projects = [firstProject, ...orderedProjects.slice(1)] as const;

@@ -1,6 +1,6 @@
-import { redirect } from 'next/navigation';
-import { projects } from './projects';
+import Portfolio from './_components/Portfolio';
+import { firstProject } from './_lib/projects';
 
 export default function Home() {
-  redirect(`/${projects[0].path}`);
+  return <Portfolio initialProjectPath={firstProject.path} />;
 }
