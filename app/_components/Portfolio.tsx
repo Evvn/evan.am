@@ -2,7 +2,7 @@
 
 import { useProjectListScroll } from '../_hooks/useProjectListScroll';
 import { useProjectSelection } from '../_hooks/useProjectSelection';
-import { firstProject } from '../_lib/projects';
+import { firstProject, getProjectEmbedUrl } from '../_lib/projects';
 import { projects } from '../projects';
 import ProjectList from './ProjectList';
 import styles from './portfolio.module.css';
@@ -57,7 +57,7 @@ export default function Portfolio({ initialProjectPath }: PortfolioProps) {
           title={currentProject.title}
           allow="autoplay; fullscreen"
           allowFullScreen
-          src={currentProject.src}
+          src={getProjectEmbedUrl(currentProject)}
           className={styles.iframe}
         />
       </div>

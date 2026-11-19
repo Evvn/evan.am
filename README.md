@@ -38,8 +38,16 @@ To add a project, add one entry to `app/projects.ts`:
 {
   title: 'Client – Title',
   path: 'project-url-slug',
-  src: 'https://streamable.com/e/video-id?autoplay=1&muted=0',
+  video: { provider: 'gumlet', assetId: 'video-asset-id', duration: 60 },
 },
 ```
 
 Keep each `path` unique. A push to `main` runs type checking, linting, the production build, and the GitHub Pages deployment.
+
+To sync catalog durations with Gumlet and flag any `assetId` that no longer exists there, run:
+
+```bash
+GUMLET_API_KEY=your_api_key node scripts/sync-videos.mjs
+```
+
+The key stays local (or in CI secrets); only the resulting catalog diff is committed.
