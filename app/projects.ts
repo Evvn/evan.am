@@ -13,6 +13,11 @@ export type Project = Readonly<{
 
 const projectCatalog = [
   {
+    title: 'Fortnite – Tokyo Treasure Hunters',
+    path: 'fortnite-tokyo-treasure-hunters',
+    video: { provider: 'gumlet', assetId: '6afeb46c88996d78dd0f4a75', duration: 50 },
+  },
+  {
     title: 'Yonex – Espresso Brown',
     path: 'yonex-espresso-brown',
     video: { provider: 'gumlet', assetId: '6afe894788996d78dd0eb278', duration: 81 },
@@ -21,6 +26,16 @@ const projectCatalog = [
     title: 'Club Scar ft. Ober & Red Fingers – GHOST',
     path: 'club-scar-ghost',
     video: { provider: 'gumlet', assetId: '6afe894888996d78dd0eb27d', duration: 172 },
+  },
+  {
+    title: 'El Capitxn – Sing This Song For Me',
+    path: 'el-capitxn-sing-this-song-for-me',
+    video: { provider: 'gumlet', assetId: '6afeb395c7baea8324560fe6', duration: 264 },
+  },
+  {
+    title: "El Capitxn – Don't Say Love",
+    path: 'el-capitxn-dont-say-love',
+    video: { provider: 'gumlet', assetId: '6afeb2c2c7baea8324560cf1', duration: 240 },
   },
   {
     title: 'Parco – Shinsaibashi, The Move Begins',
@@ -98,9 +113,19 @@ const projectCatalog = [
     video: { provider: 'gumlet', assetId: '6afe895288996d78dd0eb2c5', duration: 99 },
   },
   {
+    title: 'さらさ – Sobaniite',
+    path: 'sarasa-soba-ni-ite',
+    video: { provider: 'gumlet', assetId: '6afeb21ac7baea8324560ae4', duration: 207 },
+  },
+  {
     title: 'Musinsa – Musinsa Japan「らしさ。」',
     path: 'musinsa-rashisa',
     video: { provider: 'gumlet', assetId: '6afe8952c7baea8324557d60', duration: 30 },
+  },
+  {
+    title: 'GQ x Hublot – Yuya Yagira',
+    path: 'gq-hublot-yuya-yagira',
+    video: { provider: 'gumlet', assetId: '6afeb400c7baea83245610b4', duration: 47 },
   },
   {
     title: 'adidas – FOS / Future of Style',
@@ -126,6 +151,11 @@ const projectCatalog = [
     title: 'Parco – Shinsaibashi 50th Anniversary',
     path: 'parco-shinsaibashi-50th-anniversary',
     video: { provider: 'gumlet', assetId: '6afe895588996d78dd0eb2cd', duration: 60 },
+  },
+  {
+    title: 'Subtitle x Godzilla – TIDES',
+    path: 'subtitle-godzilla-tides',
+    video: { provider: 'gumlet', assetId: '6afeb19dc7baea83245609b4', duration: 19 },
   },
   {
     title: 'Red Bull – Tokyo Drift [editors cut]',
