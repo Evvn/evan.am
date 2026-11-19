@@ -36,8 +36,6 @@ export async function generateMetadata({
   const socialImage = thumbnail
     ? {
         url: thumbnail,
-        width: 960,
-        height: 720,
         alt: site.socialImage.alt,
       }
     : site.socialImage;
