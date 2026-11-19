@@ -43,3 +43,11 @@ To add a project, add one entry to `app/projects.ts`:
 ```
 
 Keep each `path` unique. A push to `main` runs type checking, linting, the production build, and the GitHub Pages deployment.
+
+To sync catalog durations with Gumlet and flag any `assetId` that no longer exists there, run:
+
+```bash
+GUMLET_API_KEY=your_api_key node scripts/sync-videos.mjs
+```
+
+The key stays local (or in CI secrets); only the resulting catalog diff is committed.
