@@ -38,7 +38,7 @@ To add a project, add one entry to `app/projects.ts`:
 {
   title: 'Client – Title',
   path: 'project-url-slug',
-  src: 'https://streamable.com/e/video-id?autoplay=1&muted=0',
+  src: 'https://play.gumlet.io/embed/video-asset-id?autoplay=true',
 },
 ```
 

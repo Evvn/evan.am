@@ -20,16 +20,18 @@ export function getRecentProjects(
     .slice(0, limit);
 }
 
+const GUMLET_WORKSPACE_ID = '6afe8591c7baea8324556de9';
+
 export function getProjectThumbnail(src: string): string | undefined {
   try {
     const url = new URL(src);
-    const videoId = url.pathname.split('/').filter(Boolean).at(-1);
+    const assetId = url.pathname.split('/').filter(Boolean).at(-1);
 
-    if (!url.hostname.endsWith('streamable.com') || !videoId) {
+    if (!url.hostname.endsWith('play.gumlet.io') || !assetId) {
       return undefined;
     }
 
-    return `https://cdn-cf-east.streamable.com/image/${videoId}.jpg`;
+    return `https://video.gumlet.io/${GUMLET_WORKSPACE_ID}/${assetId}/thumbnail-1-0.png?width=960&height=720&mode=crop&format=auto`;
   } catch {
     return undefined;
   }
