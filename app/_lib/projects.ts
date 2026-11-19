@@ -22,19 +22,14 @@ export function getRecentProjects(
 
 const GUMLET_WORKSPACE_ID = '6afe8591c7baea8324556de9';
 
-export function getProjectThumbnail(src: string): string | undefined {
-  try {
-    const url = new URL(src);
-    const assetId = url.pathname.split('/').filter(Boolean).at(-1);
+export function getProjectEmbedUrl(project: Project): string {
+  const { assetId } = project.video;
+  return `https://play.gumlet.io/embed/${assetId}?autoplay=true`;
+}
 
-    if (!url.hostname.endsWith('play.gumlet.io') || !assetId) {
-      return undefined;
-    }
-
-    return `https://video.gumlet.io/${GUMLET_WORKSPACE_ID}/${assetId}/thumbnail-1-0.png?width=960&height=720&mode=crop&format=auto`;
-  } catch {
-    return undefined;
-  }
+export function getProjectThumbnail(project: Project): string | undefined {
+  const { assetId } = project.video;
+  return `https://video.gumlet.io/${GUMLET_WORKSPACE_ID}/${assetId}/thumbnail-1-0.png?width=960&height=720&mode=crop&format=auto`;
 }
 
 export function getProjectIndex(path: string): number {

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Portfolio from '../_components/Portfolio';
 import {
   getProject,
+  getProjectEmbedUrl,
   getProjectThumbnail,
   getRecentProjects,
   projectPaths,
@@ -31,7 +32,7 @@ export async function generateMetadata({
   const description = getProjectDescription(project.title, recentProjectTitles);
   const title = `${site.name} – ${project.title}`;
   const pathname = `/${project.path}`;
-  const thumbnail = getProjectThumbnail(project.src);
+  const thumbnail = getProjectThumbnail(project);
   const socialImage = thumbnail
     ? {
         url: thumbnail,
@@ -65,6 +66,12 @@ export async function generateMetadata({
   };
 }
 
+function formatDuration(seconds: number): string {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return `PT${minutes}M${remainingSeconds}S`;
+}
+
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { project: projectPath } = await params;
   const project = getProject(projectPath);
@@ -73,7 +80,34 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
-  return <Portfolio initialProjectPath={project.path} />;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: project.title,
+    description: getProjectDescription(
+      project.title,
+      getRecentProjects(project.path).map((recent) => recent.title),
+    ),
+    thumbnailUrl: getProjectThumbnail(project),
+    embedUrl: getProjectEmbedUrl(project),
+    uploadDate: '2026-11-19',
+    duration: formatDuration(project.video.duration),
+    author: {
+      '@id': `${site.url}/#evan`,
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      <Portfolio initialProjectPath={project.path} />
+    </>
+  );
 }
 
 export function generateStaticParams() {

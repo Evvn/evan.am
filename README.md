@@ -38,7 +38,7 @@ To add a project, add one entry to `app/projects.ts`:
 {
   title: 'Client – Title',
   path: 'project-url-slug',
-  src: 'https://play.gumlet.io/embed/video-asset-id?autoplay=true',
+  video: { provider: 'gumlet', assetId: 'video-asset-id', duration: 60 },
 },
 ```
 
