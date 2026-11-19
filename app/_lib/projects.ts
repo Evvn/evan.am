@@ -29,7 +29,7 @@ export function getProjectEmbedUrl(project: Project): string {
 
 export function getProjectThumbnail(project: Project): string | undefined {
   const { assetId } = project.video;
-  return `https://video.gumlet.io/${GUMLET_WORKSPACE_ID}/${assetId}/thumbnail-1-0.png?width=960&format=auto`;
+  return `https://video.gumlet.io/${GUMLET_WORKSPACE_ID}/${assetId}/thumbnail-1-0.png?width=960&format=auto&v=1795095300000`;
 }
 
 export function getProjectIndex(path: string): number {
